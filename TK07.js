@@ -1,7 +1,7 @@
 const url = 'http://your-soap-service-url'; // replace with your SOAP service URL
 const headers = {
   'Content-Type': 'text/xml; charset=utf-8',
-  'SOAPAction': 'http://your-soap-action' // replace with your SOAPAction
+  'Authorization': 'Basic ' + btoa(username + ':' + password)
 };
 
 const body = `<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tank="http://Tank_Closing_Data_WS">
