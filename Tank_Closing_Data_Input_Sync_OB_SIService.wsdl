@@ -1,0 +1,233 @@
+
+<wsdl:definitions xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:p1="http://Tank_Closing_Data_WS" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" name="Tank_Closing_Data_Input_Sync_OB_SI" targetNamespace="http://Tank_Closing_Data_WS">
+   <wsdl:documentation />
+   <wsp:UsingPolicy wsdl:required="true" />
+   <wsp:Policy wsu:Id="OP_Tank_Closing_Data_Input_Sync_OB_SI" />
+   <wsdl:types>
+      <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://Tank_Closing_Data_WS" targetNamespace="http://Tank_Closing_Data_WS">
+         <xsd:element name="Tank_Closing_Data_Output_MT" type="Tank_Closing_Data_Output_DT" />
+         <xsd:element name="Tank_Closing_Data_Input_MT" type="Tank_Closing_Data_Input_DT" />
+         <xsd:complexType name="Tank_Closing_Data_Input_DT">
+            <xsd:annotation>
+               <xsd:appinfo source="http://sap.com/xi/VersionID">
+               fc21d28a40a611ed83300000002d08b6
+               </xsd:appinfo>
+            </xsd:annotation>
+            <xsd:sequence>
+               <xsd:element name="Input_Data">
+                  <xsd:annotation>
+                     <xsd:appinfo source="http://sap.com/xi/TextID">
+                     fbfbd65940a611edbc5ac8f750836ac3
+                     </xsd:appinfo>
+                  </xsd:annotation>
+                  <xsd:complexType>
+                     <xsd:sequence>
+                        <xsd:element name="CLOSING_DATE" type="xsd:date" minOccurs="0">
+                           <xsd:annotation>
+                              <xsd:appinfo source="http://sap.com/xi/TextID">
+                              cb12b650408611edc43ac8f750836ac3
+                              </xsd:appinfo>
+                              <xsd:documentation>
+                              Closing Date
+                              </xsd:documentation>
+                           </xsd:annotation>
+                        </xsd:element>
+                        <xsd:element name="CLOSING_TIME" type="xsd:time" minOccurs="0">
+                           <xsd:annotation>
+                              <xsd:appinfo source="http://sap.com/xi/TextID">
+                              cb12b651408611ed91a6c8f750836ac3
+                              </xsd:appinfo>
+                              <xsd:documentation>
+                              Closing Time
+                              </xsd:documentation>
+                           </xsd:annotation>
+                        </xsd:element>
+                        <xsd:element name="PLANT_CODE" type="xsd:string" minOccurs="0">
+                           <xsd:annotation>
+                              <xsd:appinfo source="http://sap.com/xi/TextID">
+                              cb12b652408611edae05c8f750836ac3
+                              </xsd:appinfo>
+                              <xsd:documentation>
+                              Plant Code
+                              </xsd:documentation>
+                           </xsd:annotation>
+                        </xsd:element>
+                        <xsd:element name="TANK_NO" type="xsd:string" minOccurs="0">
+                           <xsd:annotation>
+                              <xsd:appinfo source="http://sap.com/xi/TextID">
+                              cb12b653408611ed93fdc8f750836ac3
+                              </xsd:appinfo>
+                              <xsd:documentation>
+                              Tank Lorry No
+                              </xsd:documentation>
+                           </xsd:annotation>
+                        </xsd:element>
+                        <xsd:element name="MATERIAL" type="xsd:string" minOccurs="0">
+                           <xsd:annotation>
+                              <xsd:appinfo source="http://sap.com/xi/TextID">
+                              cb12b654408611edb6b7c8f750836ac3
+                              </xsd:appinfo>
+                              <xsd:documentation>
+                              Material Code
+                              </xsd:documentation>
+                           </xsd:annotation>
+                        </xsd:element>
+                        <xsd:element name="TANK_DIP" type="xsd:decimal" minOccurs="0">
+                           <xsd:annotation>
+                              <xsd:appinfo source="http://sap.com/xi/TextID">
+                              cb12b655408611edc795c8f750836ac3
+                              </xsd:appinfo>
+                              <xsd:documentation>
+                              Tank Dip
+                              </xsd:documentation>
+                           </xsd:annotation>
+                        </xsd:element>
+                        <xsd:element name="WATER_DIP" type="xsd:decimal" minOccurs="0">
+                           <xsd:annotation>
+                              <xsd:appinfo source="http://sap.com/xi/TextID">
+                              cb12b656408611ed90b9c8f750836ac3
+                              </xsd:appinfo>
+                              <xsd:documentation>
+                              Water Dip
+                              </xsd:documentation>
+                           </xsd:annotation>
+                        </xsd:element>
+                        <xsd:element name="DENSITY" type="xsd:decimal" minOccurs="0">
+                           <xsd:annotation>
+                              <xsd:appinfo source="http://sap.com/xi/TextID">
+                              cb12b657408611edc61ec8f750836ac3
+                              </xsd:appinfo>
+                              <xsd:documentation>
+                              Density
+                              </xsd:documentation>
+                           </xsd:annotation>
+                        </xsd:element>
+                        <xsd:element name="MATERIAL_TEMP" type="xsd:decimal" minOccurs="0">
+                           <xsd:annotation>
+                              <xsd:appinfo source="http://sap.com/xi/TextID">
+                              cb12b658408611ed86ecc8f750836ac3
+                              </xsd:appinfo>
+                              <xsd:documentation>
+                              Material Temperature
+                              </xsd:documentation>
+                           </xsd:annotation>
+                        </xsd:element>
+                        <xsd:element name="VAPOUR_TEMP" type="xsd:decimal" minOccurs="0">
+                           <xsd:annotation>
+                              <xsd:appinfo source="http://sap.com/xi/TextID">
+                              cb12b659408611edb7f4c8f750836ac3
+                              </xsd:appinfo>
+                              <xsd:documentation>
+                              Vapour Temperature
+                              </xsd:documentation>
+                           </xsd:annotation>
+                        </xsd:element>
+                        <xsd:element name="VAPOUR_PRESSURE" type="xsd:decimal" minOccurs="0">
+                           <xsd:annotation>
+                              <xsd:appinfo source="http://sap.com/xi/TextID">
+                              cb12b65a408611eda7e0c8f750836ac3
+                              </xsd:appinfo>
+                              <xsd:documentation>
+                              Vapour Pressure
+                              </xsd:documentation>
+                           </xsd:annotation>
+                        </xsd:element>
+                        <xsd:element name="EVENT_ID" type="xsd:string" minOccurs="0">
+                           <xsd:annotation>
+                              <xsd:appinfo source="http://sap.com/xi/TextID">
+                              cb12b65b408611ed90cfc8f750836ac3
+                              </xsd:appinfo>
+                              <xsd:documentation>
+                              Unique id for trigger
+                              </xsd:documentation>
+                           </xsd:annotation>
+                        </xsd:element>
+                        <xsd:element name="USERNAME" type="xsd:string" minOccurs="0">
+                           <xsd:annotation>
+                              <xsd:appinfo source="http://sap.com/xi/TextID">
+                              cb12b65c408611edce9ec8f750836ac3
+                              </xsd:appinfo>
+                              <xsd:documentation>
+                              Ref User
+                              </xsd:documentation>
+                           </xsd:annotation>
+                        </xsd:element>
+                     </xsd:sequence>
+                  </xsd:complexType>
+               </xsd:element>
+            </xsd:sequence>
+         </xsd:complexType>
+         <xsd:complexType name="Tank_Closing_Data_Output_DT">
+            <xsd:annotation>
+               <xsd:appinfo source="http://sap.com/xi/VersionID">
+               d7c785e9408711ed9e740000002d08b6
+               </xsd:appinfo>
+            </xsd:annotation>
+            <xsd:sequence>
+               <xsd:element name="Output_Message" minOccurs="0">
+                  <xsd:complexType>
+                     <xsd:sequence>
+                        <xsd:element name="STATUS" type="xsd:string" minOccurs="0">
+                           <xsd:annotation>
+                              <xsd:appinfo source="http://sap.com/xi/TextID">
+                              d7ba0a63408711eda0d2c8f750836ac3
+                              </xsd:appinfo>
+                              <xsd:documentation>
+                              S for success and E for Error
+                              </xsd:documentation>
+                           </xsd:annotation>
+                        </xsd:element>
+                        <xsd:element name="REMARKS" type="xsd:string" minOccurs="0">
+                           <xsd:annotation>
+                              <xsd:appinfo source="http://sap.com/xi/TextID">
+                              d7ba0a64408711ed8fffc8f750836ac3
+                              </xsd:appinfo>
+                              <xsd:documentation>
+                              Return Message for success or Error
+                              </xsd:documentation>
+                           </xsd:annotation>
+                        </xsd:element>
+                     </xsd:sequence>
+                  </xsd:complexType>
+               </xsd:element>
+            </xsd:sequence>
+         </xsd:complexType>
+      </xsd:schema>
+   </wsdl:types>
+   <wsdl:message name="Tank_Closing_Data_Input_MT">
+      <wsdl:documentation />
+      <wsdl:part name="Tank_Closing_Data_Input_MT" element="p1:Tank_Closing_Data_Input_MT" />
+   </wsdl:message>
+   <wsdl:message name="Tank_Closing_Data_Output_MT">
+      <wsdl:documentation />
+      <wsdl:part name="Tank_Closing_Data_Output_MT" element="p1:Tank_Closing_Data_Output_MT" />
+   </wsdl:message>
+   <wsdl:portType name="Tank_Closing_Data_Input_Sync_OB_SI">
+      <wsdl:documentation />
+      <wsdl:operation name="Tank_Closing_Data_Input_Sync_OB_SI">
+         <wsdl:documentation />
+         <wsp:Policy>
+            <wsp:PolicyReference URI="#OP_Tank_Closing_Data_Input_Sync_OB_SI" />
+         </wsp:Policy>
+         <wsdl:input message="p1:Tank_Closing_Data_Input_MT" />
+         <wsdl:output message="p1:Tank_Closing_Data_Output_MT" />
+      </wsdl:operation>
+   </wsdl:portType>
+   <wsdl:binding name="Tank_Closing_Data_Input_Sync_OB_SIBinding" type="p1:Tank_Closing_Data_Input_Sync_OB_SI">
+      <soap:binding xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" style="document" transport="http://schemas.xmlsoap.org/soap/http" />
+      <wsdl:operation name="Tank_Closing_Data_Input_Sync_OB_SI">
+         <soap:operation xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" soapAction="http://sap.com/xi/WebService/soap1.1" />
+         <wsdl:input>
+            <soap:body xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" use="literal" />
+         </wsdl:input>
+         <wsdl:output>
+            <soap:body xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" use="literal" />
+         </wsdl:output>
+      </wsdl:operation>
+   </wsdl:binding>
+   <wsdl:service name="Tank_Closing_Data_Input_Sync_OB_SIService">
+      <wsdl:port name="HTTP_Port" binding="p1:Tank_Closing_Data_Input_Sync_OB_SIBinding">
+         <soap:address xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" location="http://podev.corp.bharatpetroleum.com:50000/XISOAPAdapter/MessageServlet?senderParty=&amp;senderService=BS_LPG_TAS&amp;receiverParty=&amp;receiverService=&amp;interface=Tank_Closing_Data_Input_Sync_OB_SI&amp;interfaceNamespace=http://Tank_Closing_Data_WS" />
+      </wsdl:port>
+   </wsdl:service>
+</wsdl:definitions>

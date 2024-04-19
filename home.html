@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <title>TAS-SCADA</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="./style.css">
+        <link rel="icon" type="image/png" href="./imgs/home.png" id="icon">
+      </head>
+      <body>
+        <p hidden id="floatValue1"></p>
+        <div class="top-container">
+            <div class="vertical-line1"></div>
+            <div class="horizontal-line1"></div>
+            <img src="./imgs/icon-tas.png" alt="tas-icon" height="110" width="150">
+            <h1 class="title">WELCOME TO TAS-SCADA</h1>
+            <h2 id="time" class="time"></h2>
+            <h2 id="date" class="date"></h2>
+            <div class="vertical-line2"></div>
+        </div>
+        <div class="content">
+            <h1 class="title1">WELCOME TO TAS WEB SCADA</h1>
+            <img src="./imgs/iocl-icon.jpg" alt="iocl-icon" height="300" width="300" class="iocl-icon">
+        </div>
+        <div class="bottom-container">
+            <div class="btns">
+                <button class="home-btn" onclick="home_btn()">HOME</button>
+                <button class="tk-btn" onclick="tanks_btn()">TANKS</button>
+                
+                <button class="sap-reports-btn" onclick="sap_reports_btn()">SAP REPORTS</button>
+                <button class="reports-btn" onclick="reports_btn()">REPORTS</button>
+            </div>
+      </body>
+      <script src="./script.js"></script>
+</html>

@@ -1,0 +1,505 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: lightblue;
+}
+
+::selection {
+    background-color: darkblue;
+    color: white;
+}
+
+
+
+.top-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1920px;
+    height: 110px;
+    background-color: white;
+    
+}
+
+.title{
+    position: absolute;
+    left: 700px;
+    top: 0px;
+}
+
+.vertical-line1 {
+    border-left: 1px solid black;
+    height: 110px;
+    position: absolute;
+    left: 155px;
+}
+
+.horizontal-line1 {
+    border-top: 1px solid black;
+    width: 1920px;
+    position: absolute;
+    top: 110px;
+}
+
+.time {
+    position: absolute;
+    top: 10px;
+    right: 30px;
+}
+
+.date {
+    position: absolute;
+    top: 40px;
+    right: 30px;
+}
+
+.vertical-line2 {
+    border-left: 1px solid black;
+    height: 110px;
+    position: absolute;
+    right: 215px;
+    top: 0;
+}
+
+.title1{
+    position: absolute;
+    left: 650px;
+    top: 130px;
+}
+
+.iocl-icon{
+    position: absolute;
+    left: 750px;
+    top: 300px;
+}
+
+
+.bottom-container {
+    position: absolute;
+    top: 809px;
+    left: 0;
+    width: 1920px;
+    height: 110px;
+    background-color: white;
+    
+}
+
+.home-btn{
+    color: white;
+    background-color: black;
+    height: 60px;
+    width: 90px;
+    position: absolute;
+    border-radius: 10px;
+    top: 20px;
+    left: 700px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.tk-btn{
+    color: white;
+    background-color: black;
+    height: 60px;
+    width: 90px;
+    position: absolute;
+    border-radius: 10px;
+    top: 20px;
+    left: 800px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+
+.sap-reports-btn{
+    color: white;
+    background-color: black;
+    height: 60px;
+    width: 120px;
+    position: absolute;
+    border-radius: 10px;
+    top: 20px;
+    left: 900px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.reports-btn{
+    color: white;
+    background-color: black;
+    height: 60px;
+    width: 120px;
+    position: absolute;
+    border-radius: 10px;
+    top: 20px;
+    left: 1030px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.window-name-sap{
+    position: absolute;
+    left: 900px;
+    top: 50px;
+}
+
+
+.window-name-sap-reports{
+    position: absolute;
+    left: 850px;
+    top: 50px;
+}
+
+.window-name-reports{
+    position: absolute;
+    left: 850px;
+    top: 50px;
+}
+
+.window-name-tanks{
+    position: absolute;
+    left: 850px;
+    top: 50px;
+}
+
+
+.sap-report-exp{
+    position: absolute;
+    top: 115px;
+    left: 10px;
+    width: 1900px;
+    height: 670px;
+}
+
+.report-exp{
+    position: absolute;
+    top: 115px;
+    left: 10px;
+    width: 1900px;
+    height: 670px;
+}
+
+.tank-name-1{
+    position: absolute;
+    top: 100px;
+    left: 250px;
+}
+
+.tank-name-2{
+    position: absolute;
+    top: 100px;
+    left: 700px;
+}
+
+.tank-name-3{
+    position: absolute;
+    top: 100px;
+    left: 1150px;
+}
+
+.tank-name-4{
+    position: absolute;
+    top: 100px;
+    left: 1600px;
+}
+
+.tank-img-1{
+    position: absolute;
+    top: 150px;
+    left: 175px;
+}
+.tank-img-2{
+    position: absolute;
+    top: 150px;
+    left: 625px;
+}
+.tank-img-3{
+    position: absolute;
+    top: 150px;
+    left: 1075px;
+}
+.tank-img-4{
+    position: absolute;
+    top: 150px;
+    left: 1530px;
+}
+
+.input-container-1{
+    position: absolute;
+    top: 450px;
+    left: 100px;
+    width: 400px;
+    height: 200px;
+    background-color: white;
+    border-radius: 10px;
+    color: black;
+    text-align: center;
+    font-size: 20px;
+    padding-top: 50px;
+}
+
+
+.input-container-2{
+    position: absolute;
+    top: 450px;
+    left: 540px;
+    width: 400px;
+    height: 200px;
+    background-color: white;
+    border-radius: 10px;
+    color: black;
+    text-align: center;
+    font-size: 20px;
+    padding-top: 50px;
+}
+
+
+
+.input-container-3{
+    position: absolute;
+    top: 450px;
+    left: 1000px;
+    width: 400px;
+    height: 200px;
+    background-color: white;
+    border-radius: 10px;
+    color: black;
+    text-align: center;
+    font-size: 20px;
+    padding-top: 50px;
+}
+
+
+
+.input-container-4{
+    position: absolute;
+    top: 450px;
+    left: 1460px;
+    width: 400px;
+    height: 200px;
+    background-color: white;
+    border-radius: 10px;
+    color: black;
+    text-align: center;
+    font-size: 20px;
+    padding-top: 50px;
+}
+
+.primary-level{
+    position: absolute;
+    top: 5px;
+    left: 20px;
+    font-size: 20px;
+}
+
+.secondary-level{
+    position: absolute;
+    top: 45px;
+    left: 20px;
+    font-size: 20px;
+}
+
+
+.liqt-level{
+    position: absolute;
+    top: 85px;
+    left: 20px;
+    font-size: 20px;
+}
+
+.vapt-level{
+    position: absolute;
+    top: 130px;
+    left: 20px;
+    font-size: 20px;
+}
+
+.pressure-level{
+    position: absolute;
+    top: 175px;
+    left: 20px;
+    font-size: 20px;
+}
+
+
+.mainten1-on-btn{
+    position: absolute;
+    top: 720px;
+    left: 100px;
+    height: 60px;
+    width: 70px;
+    border-radius: 10px;
+    font-size: 20px;
+    background-color: lightyellow;
+}
+
+.mainten1-off-btn{
+    position: absolute;
+    top: 720px;
+    left: 100px;
+    height: 60px;
+    width: 70px;
+    border-radius: 10px;
+    font-size: 20px;
+    background-color: lightyellow;
+}
+
+.status-sphere1-btn{
+    position: absolute;
+    top: 720px;
+    left: 180px;
+    height: 60px;
+    width: 150px;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+
+.sap-1-btn{
+    position: absolute;
+    top: 720px;
+    left: 340px;
+    height: 60px;
+    width: 150px;
+    border-radius: 10px;
+    font-size: 20px;
+    background-color: lightyellow;
+}
+
+
+
+.mainten2-on-btn{
+    position: absolute;
+    top: 720px;
+    left: 550px;
+    height: 60px;
+    width: 70px;
+    border-radius: 10px;
+    font-size: 20px;
+    background-color: lightyellow;
+}
+
+.mainten2-off-btn{
+    position: absolute;
+    top: 720px;
+    left: 550px;
+    height: 60px;
+    width: 70px;
+    border-radius: 10px;
+    font-size: 20px;
+    background-color: lightyellow;
+}
+
+.status-sphere2-btn{
+    position: absolute;
+    top: 720px;
+    left: 630px;
+    height: 60px;
+    width: 150px;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+
+.sap-2-btn{
+    position: absolute;
+    top: 720px;
+    left: 790px;
+    height: 60px;
+    width: 150px;
+    border-radius: 10px;
+    font-size: 20px;
+    background-color: lightyellow;
+}
+
+
+.mainten3-on-btn{
+    position: absolute;
+    top: 720px;
+    left: 1000px;
+    height: 60px;
+    width: 70px;
+    border-radius: 10px;
+    font-size: 20px;
+    background-color: lightyellow;
+}
+
+.mainten3-off-btn{
+    position: absolute;
+    top: 720px;
+    left: 1000px;
+    height: 60px;
+    width: 70px;
+    border-radius: 10px;
+    font-size: 20px;
+    background-color: lightyellow;
+}
+
+.status-sphere3-btn{
+    position: absolute;
+    top: 720px;
+    left: 1080px;
+    height: 60px;
+    width: 150px;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+
+.sap-3-btn{
+    position: absolute;
+    top: 720px;
+    left: 1240px;
+    height: 60px;
+    width: 150px;
+    border-radius: 10px;
+    font-size: 20px;
+    background-color: lightyellow;
+}
+
+
+
+.mainten4-on-btn{
+    position: absolute;
+    top: 720px;
+    left: 1470px;
+    height: 60px;
+    width: 70px;
+    border-radius: 10px;
+    font-size: 20px;
+    background-color: lightyellow;
+}
+
+.mainten4-off-btn{
+    position: absolute;
+    top: 720px;
+    left: 1470px;
+    height: 60px;
+    width: 70px;
+    border-radius: 10px;
+    font-size: 20px;
+    background-color: lightyellow;
+}
+
+.status-sphere4-btn{
+    position: absolute;
+    top: 720px;
+    left: 1550px;
+    height: 60px;
+    width: 150px;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+
+.sap-4-btn{
+    position: absolute;
+    top: 720px;
+    left: 1710px;
+    height: 60px;
+    width: 150px;
+    border-radius: 10px;
+    font-size: 20px;
+    background-color: lightyellow;
+}

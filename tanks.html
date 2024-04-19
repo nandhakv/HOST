@@ -1,0 +1,141 @@
+<html>
+    <head>
+        <title>TAS-SCADA</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="./style.css">
+        <link rel="icon" type="image/png" href="./imgs/tnk.png" id="icon">
+      </head>
+      <body>
+        <div class="top-container">
+            <div class="vertical-line1"></div>
+            <div class="horizontal-line1"></div>
+            <img src="./imgs/icon-tas.png" alt="tas-icon" height="110" width="150">
+            <h1 class="title">WELCOME TO TAS-SCADA</h1>
+            <h2 class="window-name-tanks">TANKS</h2>
+            <h2 id="time" class="time"></h2>
+            <h2 id="date" class="date"></h2>
+            <div class="vertical-line2"></div>
+        </div>
+        <div class="content-tanks">
+            <div class="tank1">
+                <h1 class="tank-name-1">TANK 1</h1>
+                <img src="./imgs/tank.png" class="tank-img-1" alt="tank-img">
+                <div class="input-container-1">
+                    <h4 class="primary-level">PRIMARY LEVEL</h4>
+                    <h4 style="position: absolute; top: 5px; right: 100px;" id="tank1_params[0]">#####</h4>
+                    <h4 style="position: absolute; top: 5px; right: 30px;">CM</h4>
+                    <h4 class="secondary-level">SECONDARY LEVEL</h4>
+                    <h4 id="tank1_params[1]" style="position: absolute; top: 45px; right: 100px;">#####</h4>
+                    <h4 style="position: absolute; top: 45px; right: 30px;">CM</h4>
+                    <h4 class="liqt-level">LIQ.TEMP</h4>
+                    <h4 id="tank1_params[2]" style="position: absolute; top: 85px; right: 150px;">#####</h4>
+                    <h4 style="position: absolute; top: 85px; right: 90px;">°C</h4>
+                    <h4 class="vapt-level">VAP.TEMP</h4>
+                    <h4 id="tank1_params[3]" style="position: absolute; top: 130px; right: 150px;">#####</h4>
+                    <h4 style="position: absolute; top: 130px; right: 90px;">°C</h4>
+                    <h4 class="pressure-level">PRESSURE</h4>
+                    <h4 id="tank1_params[4]" style="position: absolute; top: 175px; right: 150px;">#####</h4>
+                    <h4 style="position: absolute; top: 175px; right: 60px;">Kg/cm²</h4>
+                </div>
+                <div class="tk1-btns-btm">
+                    <button class="mainten1-on-btn" onclick="tank1_mainten_on()">ON</button>
+                    <button class="mainten1-off-btn" onclick="tank1_mainten_off()">OFF</button>
+                    <button class="status-sphere1-btn" id="status-sphere1-btn">SPHERE</button>
+                    <button class="sap-1-btn" id="sap-1-btn">SAP</button>
+                </div>
+            </div>
+            <div class="tank2">
+                <h1 class="tank-name-2">TANK 2</h1>
+                <img src="./imgs/tank.png" class="tank-img-2" alt="tank-img">
+                <div class="input-container-2">
+                    <h4 class="primary-level">PRIMARY LEVEL</h4>
+                    <h4 id="tank2_params[0]" style="position: absolute; top: 5px; right: 100px;">#####</h4>
+                    <h4 style="position: absolute; top: 5px; right: 30px;">CM</h4>
+                    <h4 class="secondary-level">SECONDARY LEVEL</h4>
+                    <h4 id="tank2_params[1]" style="position: absolute; top: 45px; right: 100px;">#####</h4>
+                    <h4 style="position: absolute; top: 45px; right: 30px;">CM</h4>
+                    <h4 class="liqt-level">LIQ.TEMP</h4>
+                    <h4 id="tank2_params[2]" style="position: absolute; top: 85px; right: 150px;">#####</h4>
+                    <h4 style="position: absolute; top: 85px; right: 90px;">°C</h4>
+                    <h4 class="vapt-level">VAP.TEMP</h4>
+                    <h4 id="tank2_params[3]" style="position: absolute; top: 130px; right: 150px;">#####</h4>
+                    <h4 style="position: absolute; top: 130px; right: 90px;">°C</h4>
+                    <h4 class="pressure-level">PRESSURE</h4>
+                    <h4 id="tank2_params[4]" style="position: absolute; top: 175px; right: 150px;">#####</h4>
+                    <h4 style="position: absolute; top: 175px; right: 60px;">Kg/cm²</h4>
+                </div>
+                <div class="tk2-btns-btm">
+                    <button class="mainten2-on-btn" onclick="tank1_mainten_on()">ON</button>
+                    <button class="mainten2-off-btn" onclick="tank1_mainten_off()">OFF</button>
+                    <button class="status-sphere2-btn" id="status-sphere2-btn">SPHERE</button>
+                    <button class="sap-2-btn" id="sap-2-btn">SAP</button>
+                </div>
+            </div>
+            <div class="tank3">
+                <h1 class="tank-name-3">TANK 3</h1>
+                <img src="./imgs/tank.png" class="tank-img-3" alt="tank-img">
+                <div class="input-container-3">
+                    <h4 class="primary-level">PRIMARY LEVEL</h4>
+                    <h4 id="tank3_params[0]" style="position: absolute; top: 5px; right: 100px;">#####</h4>
+                    <h4 style="position: absolute; top: 5px; right: 30px;">CM</h4>
+                    <h4 class="secondary-level">SECONDARY LEVEL</h4>
+                    <h4 id="tank3_params[1]" style="position: absolute; top: 45px; right: 100px;">#####</h4>
+                    <h4 style="position: absolute; top: 45px; right: 30px;">CM</h4>
+                    <h4 class="liqt-level">LIQ.TEMP</h4>
+                    <h4 id="tank3_params[2]" style="position: absolute; top: 85px; right: 150px;">#####</h4>
+                    <h4 style="position: absolute; top: 85px; right: 90px;">°C</h4>
+                    <h4 class="vapt-level">VAP.TEMP</h4>
+                    <h4 id="tank3_params[3]" style="position: absolute; top: 130px; right: 150px;">#####</h4>
+                    <h4 style="position: absolute; top: 130px; right: 90px;">°C</h4>
+                    <h4 class="pressure-level">PRESSURE</h4>
+                    <h4 id="tank3_params[4]" style="position: absolute; top: 175px; right: 150px;">#####</h4>
+                    <h4 style="position: absolute; top: 175px; right: 60px;">Kg/cm²</h4>
+                </div>
+                <div class="tk2-btns-btm">
+                    <button class="mainten3-on-btn" onclick="tank1_mainten_on()">ON</button>
+                    <button class="mainten3-off-btn" onclick="tank1_mainten_off()">OFF</button>
+                    <button class="status-sphere3-btn" id="status-sphere3-btn">SPHERE</button>
+                    <button class="sap-3-btn" id="sap-3-btn">SAP</button>
+                </div>
+            </div>
+            <div class="tank4">
+                <h1 class="tank-name-4">TANK 4</h1>
+                <img src="./imgs/tank.png" class="tank-img-4" alt="tank-img">
+                <div class="input-container-4">
+                    <h4 class="primary-level">PRIMARY LEVEL</h4>
+                    <h4 id="tank4_params[0]" style="position: absolute; top: 5px; right: 100px;">#####</h4>
+                    <h4 style="position: absolute; top: 5px; right: 30px;">CM</h4>
+                    <h4 class="secondary-level">SECONDARY LEVEL</h4>
+                    <h4 id="tank4_params[1]" style="position: absolute; top: 45px; right: 100px;">#####</h4>
+                    <h4 style="position: absolute; top: 45px; right: 30px;">CM</h4>
+                    <h4 class="liqt-level">LIQ.TEMP</h4>
+                    <h4 id="tank4_params[2]" style="position: absolute; top: 85px; right: 150px;">#####</h4>
+                    <h4 style="position: absolute; top: 85px; right: 90px;">°C</h4>
+                    <h4 class="vapt-level">VAP.TEMP</h4>
+                    <h4 id="tank4_params[3]" style="position: absolute; top: 130px; right: 150px;">#####</h4>
+                    <h4 style="position: absolute; top: 130px; right: 90px;">°C</h4>
+                    <h4 class="pressure-level">PRESSURE</h4>
+                    <h4 id="tank4_params[4]" style="position: absolute; top: 175px; right: 150px;">#####</h4>
+                    <h4 style="position: absolute; top: 175px; right: 60px;">Kg/cm²</h4>
+                </div>
+                <div class="tk4-btns-btm">
+                    <button class="mainten4-on-btn" onclick="tank1_mainten_on()">ON</button>
+                    <button class="mainten4-off-btn" onclick="tank1_mainten_off()">OFF</button>
+                    <button class="status-sphere4-btn" id="status-sphere4-btn">SPHERE</button>
+                    <button class="sap-4-btn" id="sap-4-btn">SAP</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="bottom-container">
+            <div class="btns">
+                <button class="home-btn" onclick="home_btn()">HOME</button>
+                <button class="tk-btn" onclick="tanks_btn()">TANKS</button>
+                
+                <button class="sap-reports-btn" onclick="sap_reports_btn()">SAP REPORTS</button>
+                <button class="reports-btn" onclick="reports_btn()">REPORTS</button>
+            </div>
+      </body>
+      <script src="./script.js"></script>
+</html>
